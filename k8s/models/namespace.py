@@ -1,7 +1,7 @@
 from django.db import models
 
+from k8s.models import Team
 from netbox.models import NetBoxModel
-from team import Team
 
 
 class Namespace(NetBoxModel):
