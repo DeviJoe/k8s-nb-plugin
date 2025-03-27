@@ -37,3 +37,6 @@ class Namespace(NetBoxModel):
                 name='%(app_label)s_%(class)s_unique_namespace_group_name'
             )
         )
+
+    def __str__(self):
+        return self.name
