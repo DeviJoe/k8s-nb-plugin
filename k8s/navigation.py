@@ -7,7 +7,7 @@ menu_items = (
         link_text='Namespaces',
     ),
     PluginMenuItem(
-        link='plugins:netbox_access_lists:team_list',
+        link='plugins:k8s:team_list',
         link_text='Teams',
     ),
 )
