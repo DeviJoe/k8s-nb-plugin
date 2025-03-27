@@ -1,2 +1,2 @@
-from namespace import *
-from team import *
+from .namespace import *
+from .team import *
