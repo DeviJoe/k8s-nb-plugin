@@ -3,6 +3,7 @@ from django.db import models
 from .team import Team
 from netbox.models import NetBoxModel
 
+from django.urls import reverse
 
 class Namespace(NetBoxModel):
     name = models.CharField(
@@ -40,3 +41,6 @@ class Namespace(NetBoxModel):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('plugins:k8s:namespace', kwargs={'pk': self.pk})
