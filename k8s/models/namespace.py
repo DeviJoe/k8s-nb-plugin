@@ -1,6 +1,6 @@
 from django.db import models
 
-from k8s.models import Team
+from .team import Team
 from netbox.models import NetBoxModel
 
 
