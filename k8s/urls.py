@@ -1,5 +1,5 @@
 from django.urls import path
-from views import *
+from .views import *
 from netbox.views.generic import ObjectChangeLogView
 
 urlpatterns = (
