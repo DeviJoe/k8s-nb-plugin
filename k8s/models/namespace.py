@@ -35,7 +35,7 @@ class Namespace(NetBoxModel):
             models.UniqueConstraint(
                 fields=('name', 'cluster'),
                 name='%(app_label)s_%(class)s_unique_namespace_group_name'
-            )
+            ),
         )
 
     def __str__(self):
