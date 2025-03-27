@@ -8,3 +8,5 @@ class K8sConfig(PluginConfig):
     author = 'MWS Team'
     base_url = 'k8s'
     min_version = '3.4.0'
+
+config = K8sConfig
