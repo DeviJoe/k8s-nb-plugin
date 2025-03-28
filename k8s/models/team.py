@@ -11,8 +11,8 @@ class Team(NetBoxModel):
         unique=True,
     )
 
-    url = models.URLField(
-        verbose_name='url',
+    hub_url = models.URLField(
+        verbose_name='HUB_url',
     )
 
     comments = models.TextField(

@@ -16,5 +16,5 @@ class TeamTable(NetBoxTable):
 
     class Meta(NetBoxTable.Meta):
         model = Team
-        fields = ('pk', 'name', 'url', 'actions')
-        default_columns = ('name', 'url')
+        fields = ('pk', 'name', 'hub_url', 'actions')
+        default_columns = ('name', 'hub_url')

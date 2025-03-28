@@ -1,4 +1,6 @@
-from netbox.forms import NetBoxModelForm
+from django.forms import ModelMultipleChoiceField
+
+from netbox.forms import NetBoxModelForm, NetBoxModelFilterSetForm
 from utilities.forms.fields import CommentField
 from ..models.team import Team
 
@@ -8,4 +10,4 @@ class TeamForm(NetBoxModelForm):
 
     class Meta:
         model = Team
-        fields = ('name', 'url', 'comments')
+        fields = ('name', 'hub_url', 'comments')
